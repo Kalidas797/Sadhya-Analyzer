@@ -1,73 +1,81 @@
-# Welcome to your Lovable project
+<img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
+Sadhya_Analyser 🍛🟩
+Basic Details
+Team Name: NOVA SPARKS
+Team Members
 
-## Project info
+    Team Lead: Neeraj Sukumaran – Sree Buddha College of Engineering, Pattoor, Alappuzha
 
-**URL**: https://lovable.dev/projects/7ce1c916-f139-43af-8f52-295834e078ec
+    Member 2: Kalidas V.S. – Sree Buddha College of Engineering, Pattoor, Alappuzha
 
-## How can I edit this code?
 
-There are several ways of editing your application.
+Project Description
 
-**Use Lovable**
+An AI-powered app that checks if your Sadhya is arranged correctly on a banana leaf — because, of course, that matters more than taste.
+The Problem (that doesn't exist)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7ce1c916-f139-43af-8f52-295834e078ec) and start prompting.
+People are eating Sadhya chaotic style — avial near the banana, payasam on the left, and pappadam chilling in the middle like it's the DJ. This is an existential threat to Onam aesthetics.
+The Solution (that nobody asked for)
 
-Changes made via Lovable will be committed automatically to this repo.
+We trained an AI model to analyze banana leaf symmetry and judge your Sadhya plate. It tells you if your Vishu vibe is off or if you're ready for the culinary catwalk.
+Technical Details
+Technologies/Components Used
 
-**Use your preferred IDE**
+For Software:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+    Languages: TypeScript, JavaScript
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+    Frameworks: React, Vite
 
-Follow these steps:
+    Libraries: Tailwind CSS, Lucide Icons, react-hot-toast
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+    Tools: GitHub, Vercel
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+For Hardware:
 
-# Step 3: Install the necessary dependencies.
-npm i
+    🥲 Banana leaf (virtual)
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+    Eyes of the AI (YOLOv8 model or placeholder logic)
+
+    Camera (optional, but for best accuracy, use DSLR... joking)
+
+Implementation
+
+For Software:
+Installation
+
+git clone https://github.com/Neeraj2303/Sadhya_Analyser.git  
+cd Sadhya_Analyser  
+npm install
+
+Run
+
 npm run dev
-```
 
-**Edit a file directly in GitHub**
+Deploy
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Deployed on Lovable
+LINK: https://sadhyamitra-analyzer.lovable.app/
 
-**Use GitHub Codespaces**
+Project Documentation
+Screenshots
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Screenshot : <img width="1918" height="1197" alt="image" src="https://github.com/user-attachments/assets/a5e1e723-2829-497b-b0bf-9301afb13df1" />
 
-## What technologies are used for this project?
+Main analysis UI with mock leaf and items detected
 
-This project is built with:
+For Hardware: (if future integration happens)
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Video Demo : https://drive.google.com/file/d/1pTLUpGKP4Ji9al64vypg1KZSg8uhV1QW/view?usp=sharing
+Shows uploading an image, analyzing, and getting judged by an AI with no culinary training
+Additional Demos
 
-## How can I deploy this project?
+Team Contributions
 
-Simply open [Lovable](https://lovable.dev/projects/7ce1c916-f139-43af-8f52-295834e078ec) and click on Share -> Publish.
+    Neeraj Sukumaran: Frontend UI, AI logic integration, model prompt engineer, cultural accuracy expert
 
-## Can I connect a custom domain to my Lovable project?
+    Kalidas V.S. : Model prompt engineer, cultural accuracy
+    
+Made with ❤ (and banana leaves) at TinkerHub Useless Projects
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+![Static Badge](https://img.shields.io/badge/TinkerHub-black?link=https%3A%2F%2Fwww.tinkerhub.org%2F)![Static Badge](https://img.shields.io/badge/UselessProjects--2.0-brightgreen?link=https%3A%2F%2Fwww.tinkerhub.org%2Fevents%2FQ2Q1TQKX6Q%2FUseless%2520Projects)
