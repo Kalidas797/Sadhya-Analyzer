@@ -1,0 +1,127 @@
+import type { Config } from "tailwindcss";
+
+export default {
+	darkMode: ["class"],
+	content: [
+		"./pages/**/*.{ts,tsx}",
+		"./components/**/*.{ts,tsx}",
+		"./app/**/*.{ts,tsx}",
+		"./src/**/*.{ts,tsx}",
+	],
+	prefix: "",
+	theme: {
+		container: {
+			center: true,
+			padding: '2rem',
+			screens: {
+				'2xl': '1400px'
+			}
+		},
+		extend: {
+			colors: {
+				border: 'hsl(var(--border))',
+				input: 'hsl(var(--input))',
+				ring: 'hsl(var(--ring))',
+				background: 'hsl(var(--background))',
+				foreground: 'hsl(var(--foreground))',
+				primary: {
+					DEFAULT: 'hsl(var(--primary))',
+					foreground: 'hsl(var(--primary-foreground))'
+				},
+				secondary: {
+					DEFAULT: 'hsl(var(--secondary))',
+					foreground: 'hsl(var(--secondary-foreground))'
+				},
+				destructive: {
+					DEFAULT: 'hsl(var(--destructive))',
+					foreground: 'hsl(var(--destructive-foreground))'
+				},
+				muted: {
+					DEFAULT: 'hsl(var(--muted))',
+					foreground: 'hsl(var(--muted-foreground))'
+				},
+				accent: {
+					DEFAULT: 'hsl(var(--accent))',
+					foreground: 'hsl(var(--accent-foreground))'
+				},
+				popover: {
+					DEFAULT: 'hsl(var(--popover))',
+					foreground: 'hsl(var(--popover-foreground))'
+				},
+				card: {
+					DEFAULT: 'hsl(var(--card))',
+					foreground: 'hsl(var(--card-foreground))'
+				},
+				// Sadhya-specific colors
+				'leaf-green': 'hsl(var(--leaf-green))',
+				'leaf-green-light': 'hsl(var(--leaf-green-light))',
+				'festival-gold': 'hsl(var(--festival-gold))',
+				'festival-yellow': 'hsl(var(--festival-yellow))',
+				'warm-cream': 'hsl(var(--warm-cream))',
+				sidebar: {
+					DEFAULT: 'hsl(var(--sidebar-background))',
+					foreground: 'hsl(var(--sidebar-foreground))',
+					primary: 'hsl(var(--sidebar-primary))',
+					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
+					accent: 'hsl(var(--sidebar-accent))',
+					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
+					border: 'hsl(var(--sidebar-border))',
+					ring: 'hsl(var(--sidebar-ring))'
+				}
+			},
+			borderRadius: {
+				lg: 'var(--radius)',
+				md: 'calc(var(--radius) - 2px)',
+				sm: 'calc(var(--radius) - 4px)'
+			},
+			keyframes: {
+				'accordion-down': {
+					from: {
+						height: '0'
+					},
+					to: {
+						height: 'var(--radix-accordion-content-height)'
+					}
+				},
+				'accordion-up': {
+					from: {
+						height: 'var(--radix-accordion-content-height)'
+					},
+					to: {
+						height: '0'
+					}
+				},
+				'leaf-sway': {
+					'0%, 100%': { transform: 'rotate(-1deg)' },
+					'50%': { transform: 'rotate(1deg)' }
+				},
+				'festival-glow': {
+					'0%, 100%': { boxShadow: '0 0 5px hsl(var(--festival-gold))' },
+					'50%': { boxShadow: '0 0 20px hsl(var(--festival-gold)), 0 0 30px hsl(var(--festival-gold))' }
+				},
+				'pulse-gentle': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.8' }
+				}
+			},
+			animation: {
+				'accordion-down': 'accordion-down 0.2s ease-out',
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'leaf-sway': 'leaf-sway 3s ease-in-out infinite',
+				'festival-glow': 'festival-glow 2s ease-in-out infinite',
+				'pulse-gentle': 'pulse-gentle 2s ease-in-out infinite'
+			},
+			backgroundImage: {
+				'gradient-leaf': 'var(--gradient-leaf)',
+				'gradient-festival': 'var(--gradient-festival)',
+				'gradient-warm': 'var(--gradient-warm)'
+			},
+			boxShadow: {
+				'leaf': 'var(--shadow-leaf)',
+				'festival': 'var(--shadow-festival)',
+				'elegant': 'var(--shadow-elegant)'
+			}
+		}
+	},
+	plugins: [require("tailwindcss-animate")],
+} satisfies Config;
